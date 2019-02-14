@@ -20,6 +20,15 @@ ddnsapiuri：api地址
 
 默认为花生壳服务器相关参数
 
-如使用dynu或noip，需传入对应参数
+如使用dynu或noip，需传入对应的可选参数
 
-目前仅针对Oray进行了测试。
+因需注册帐号，目前仅针对Oray进行了测试。
+
+
+## 作者博客
+
+https://www.cnblogs.com/flyfire-cn/
+
+## 相关博文
+
+https://www.cnblogs.com/flyfire-cn/p/10381298.html
