@@ -13,6 +13,7 @@ namespace flyfire.DDNS
     /// <summary>
     /// DDNS动态解析类
     /// 支持Oary、Dynu、NoIp
+    /// https://www.cnblogs.com/flyfire-cn/
     /// </summary>
     public class DDNSClient
     {

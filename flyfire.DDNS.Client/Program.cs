@@ -12,7 +12,10 @@ namespace flyfire.DDNS.Client
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello DDNS!\r\n");
+            Console.WriteLine("Hello DDNS!\r\n"); 
+            Console.WriteLine("https://www.cnblogs.com/flyfire-cn/"); 
+            Console.WriteLine("mailto:liugang027@163.com");
+            Console.WriteLine(Environment.NewLine);
             if (args.Length < 3)
             {
                 Console.WriteLine("Parameter error, please check relevant configuration.");
