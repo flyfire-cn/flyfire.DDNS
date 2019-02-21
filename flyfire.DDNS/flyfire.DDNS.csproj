@@ -16,7 +16,9 @@
     <PackageReleaseNotes>https://www.cnblogs.com/flyfire-cn/</PackageReleaseNotes>
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/44192387?s=400&amp;u=894bb6ae3a01a9f48627cb844320239351a144a9&amp;v=4</PackageIconUrl>
     <PackageTags></PackageTags>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <Version>1.0.2</Version>
+    <FileVersion>1.0.0.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

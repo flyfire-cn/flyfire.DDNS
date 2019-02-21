@@ -144,7 +144,8 @@ namespace flyfire.DDNS
                 var response = client.GetAsync($"{ApiUri}?hostname={HostName}");
                 if (response.Result.IsSuccessStatusCode)
                 {
-                    ret = response.Result.ToString();
+                    //ret = response.Result.ToString();
+                    ret = response.Result.Content.ReadAsStringAsync().Result;//good 221.234.238.64
                 }
                 else
                 {
