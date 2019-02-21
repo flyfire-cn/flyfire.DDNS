@@ -20,9 +20,16 @@ ddnsapiuri：api地址
 
 默认为花生壳服务器相关参数
 
-如使用dynu或noip，需传入对应的可选参数
+使用dynu
+ddnsapidomain：http://api.dynu.com
+ddnsapiuri：/nic/update
 
-针对oray、noip测试通过。
+
+使用noip，需传入对应的可选参数
+ddnsapidomain：http://dynupdate.no-ip.com
+ddnsapiuri：/nic/update
+
+oray、noip域名测试通过。
 dynu目前网络访问受阻。
 
 
