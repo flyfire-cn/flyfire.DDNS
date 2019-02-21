@@ -23,8 +23,8 @@ namespace flyfire.DDNS
         private readonly string UserName;
         private readonly string Password;
 
-        [DefaultValue("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0")]
-        public string Agent { get; set; } //= "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0";
+        //[DefaultValue("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0")]
+        public string Agent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0";
 
         /// <summary>
         /// 构造函数

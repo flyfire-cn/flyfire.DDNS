@@ -2,7 +2,7 @@
 
 基于常用DDNS服务提供商的基本认证协议，实现了一个DDNS Client类库和一个可参数化配置启用的应用程序。
 
-支持Oray、Dynu、NoIP（http get）
+支持oray、dynu、noip（http get）
 
 程序采用dotnet core2.2.1开发
 
@@ -22,7 +22,8 @@ ddnsapiuri：api地址
 
 如使用dynu或noip，需传入对应的可选参数
 
-因需注册帐号，目前仅针对Oray进行了测试。
+针对oray、noip测试通过。
+dynu目前网络访问受阻。
 
 
 ## 作者博客
