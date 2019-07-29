@@ -48,7 +48,11 @@ namespace flyfire.DDNS.Client
             while (!quit)
             {
                 Console.WriteLine("\r\nPress Q or q Key exit.");
+#if DEBUG
                 var key = Console.ReadKey().KeyChar;
+#else
+                var key = Console.Read();
+#endif
                 Console.WriteLine();
                 switch (key)
                 {
