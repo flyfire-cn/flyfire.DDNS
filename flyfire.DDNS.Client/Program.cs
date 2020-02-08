@@ -7,7 +7,7 @@ namespace flyfire.DDNS.Client
     class Program
     {
         private static System.Timers.Timer ddnsClientTimer = new System.Timers.Timer();
-        private static readonly long checkCycle = 1000 * 60 * 10;
+        private static readonly long checkCycle = 1000 * 60 * 15;
         private static DDNSClient ddnsClient = null;
 
         static void Main(string[] args)
@@ -40,7 +40,7 @@ namespace flyfire.DDNS.Client
                     ddnsClient = new DDNSClient(args[0], args[1], args[2], args[3], args[4]);
                     break;
             }
-            Console.WriteLine($"\r\n{DateTime.Now}\tddns client start.\r\n");
+            Console.WriteLine($"\r\n{DateTime.Now:yyyy/MM/dd HH:mm:ss}\tddns client start.\r\n");
             UpdateDDNS();
 
             StartDDNSClient();
@@ -90,12 +90,21 @@ namespace flyfire.DDNS.Client
             UpdateDDNS();
         }
 
+        private static int times = 0;
         private static void UpdateDDNS()
         {
             if (ddnsClient.IsIpAddressChanged())
             {
                 var result = ddnsClient.UpdateDDns();
-                Console.WriteLine($"{DateTime.Now}\tupdate ddns. info:{result}");
+                Console.WriteLine($"{DateTime.Now:yyyy/MM/dd HH:mm:ss}\tupdate ddns.HostName:[{ddnsClient.HostName}] info:{result}");
+                times = 0;
+            }else
+            {
+                if (times == 0)
+                    Console.WriteLine($"{DateTime.Now:yyyy/MM/dd HH:mm:ss}\tupdate ddns.HostName:[{ddnsClient.HostName}] ip:[{ddnsClient.GetHostNameIp()}]");
+
+                times++;
+                times %= 8;//控制每两小时输出一次                
             }
         }
     }

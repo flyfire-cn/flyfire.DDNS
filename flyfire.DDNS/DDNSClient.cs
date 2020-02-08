@@ -17,11 +17,11 @@ namespace flyfire.DDNS
     /// </summary>
     public class DDNSClient
     {
-        private readonly string BaseAddress;
-        private readonly string ApiUri;
-        private readonly string HostName;
-        private readonly string UserName;
-        private readonly string Password;
+        public string BaseAddress { get; set; }
+        public string ApiUri { get; set; }
+        public string HostName { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
 
         //[DefaultValue("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0")]
         public string Agent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0";
