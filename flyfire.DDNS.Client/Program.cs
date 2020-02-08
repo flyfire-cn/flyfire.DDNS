@@ -101,7 +101,7 @@ namespace flyfire.DDNS.Client
             }else
             {
                 if (times == 0)
-                    Console.WriteLine($"{DateTime.Now:yyyy/MM/dd HH:mm:ss}\tupdate ddns.HostName:[{ddnsClient.HostName}] ip:[{ddnsClient.GetHostNameIp()}]");
+                    Console.WriteLine($"{DateTime.Now:yyyy/MM/dd HH:mm:ss}\tresolver dns.HostName:[{ddnsClient.HostName}] ip:[{ddnsClient.GetHostNameIp()}]");
 
                 times++;
                 times %= 8;//控制每两小时输出一次                
